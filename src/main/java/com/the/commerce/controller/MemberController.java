@@ -40,7 +40,7 @@ public class MemberController {
      * @param userId and Dto update 정보를 dto 형식으로
      * @return update 된 정보가 나갑니다
      */
-    @PatchMapping("/{userId}")
+    @PutMapping("/{userId}")
     public ResponseEntity<MemberDto> update(@PathVariable String userId, @RequestBody MemberDto dto) {
         return memberService.updateMember(userId, dto);
     }
