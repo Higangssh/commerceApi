@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: commerce
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/commerce?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+server:
+  port: 9000
+  servlet:
+    context-path: /api
+    encoding:
+      force-response: true
+      force-request: true
+      charset: UTF-8
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
+  swagger:
+    basePath: /api
+
