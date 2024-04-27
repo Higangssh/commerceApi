@@ -4,7 +4,7 @@
 
 ## 🔧 개발 환경
 
-- **Language** : `Java`
+- **Language** : `Java 1.8`
 - **IDE**  : `IntelliJ`
 - **Framework** : `SpringBoot`
 - **DataBase** : `Mysql 8.0.36`
